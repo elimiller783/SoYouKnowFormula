@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		270AD33F2236862E00F9F79F /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270AD33E2236862D00F9F79F /* SwiftyJSON.swift */; };
 		270AD3412236C82400F9F79F /* names.json in Resources */ = {isa = PBXBuildFile; fileRef = 270AD3402236C82400F9F79F /* names.json */; };
+		270AD3432237EE7500F9F79F /* MemoryGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270AD3422237EE7500F9F79F /* MemoryGameViewController.swift */; };
 		279DA16822346B2C00AE943D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279DA16722346B2C00AE943D /* AppDelegate.swift */; };
 		279DA16A22346B2C00AE943D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279DA16922346B2C00AE943D /* ViewController.swift */; };
 		279DA16D22346B2C00AE943D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279DA16B22346B2C00AE943D /* Main.storyboard */; };
 		279DA16F22346B2E00AE943D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279DA16E22346B2E00AE943D /* Assets.xcassets */; };
-		279DA1772234DBDD00AE943D /* CarCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279DA1762234DBDD00AE943D /* CarCardCell.swift */; };
+		279DA1772234DBDD00AE943D /* DriverCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279DA1762234DBDD00AE943D /* DriverCardCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		270AD33E2236862D00F9F79F /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		270AD3402236C82400F9F79F /* names.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = names.json; sourceTree = "<group>"; };
+		270AD3422237EE7500F9F79F /* MemoryGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameViewController.swift; sourceTree = "<group>"; };
 		279DA16422346B2C00AE943D /* SoYouKnowFormula.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoYouKnowFormula.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		279DA16722346B2C00AE943D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		279DA16922346B2C00AE943D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		279DA16C22346B2C00AE943D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		279DA16E22346B2E00AE943D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		279DA17022346B2E00AE943D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		279DA1762234DBDD00AE943D /* CarCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCardCell.swift; sourceTree = "<group>"; };
+		279DA1762234DBDD00AE943D /* DriverCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverCardCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +63,8 @@
 				279DA16722346B2C00AE943D /* AppDelegate.swift */,
 				279DA16922346B2C00AE943D /* ViewController.swift */,
 				279DA16B22346B2C00AE943D /* Main.storyboard */,
-				279DA1762234DBDD00AE943D /* CarCardCell.swift */,
+				270AD3422237EE7500F9F79F /* MemoryGameViewController.swift */,
+				279DA1762234DBDD00AE943D /* DriverCardCell.swift */,
 				279DA16E22346B2E00AE943D /* Assets.xcassets */,
 				279DA17022346B2E00AE943D /* Info.plist */,
 				270AD3402236C82400F9F79F /* names.json */,
@@ -141,10 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				279DA1772234DBDD00AE943D /* CarCardCell.swift in Sources */,
+				279DA1772234DBDD00AE943D /* DriverCardCell.swift in Sources */,
 				279DA16A22346B2C00AE943D /* ViewController.swift in Sources */,
 				270AD33F2236862E00F9F79F /* SwiftyJSON.swift in Sources */,
 				279DA16822346B2C00AE943D /* AppDelegate.swift in Sources */,
+				270AD3432237EE7500F9F79F /* MemoryGameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
