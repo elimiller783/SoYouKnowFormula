@@ -10,4 +10,7 @@ import UIKit
 
 class DriverCardCell: UICollectionViewCell {
     
+    @IBOutlet var card: UIImageView!
+    @IBOutlet var content: UIImageView!
+    @IBOutlet var textLabel: UILabel!
 }
