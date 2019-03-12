@@ -1,5 +1,5 @@
 //
-//  CarCardCell.swift
+//  DriverCardCell.swift
 //  SoYouKnowFormula
 //
 //  Created by Elias Miller on 3/10/19.
@@ -8,6 +8,6 @@
 
 import UIKit
 
-class CarCardCell: UICollectionViewCell {
+class DriverCardCell: UICollectionViewCell {
     
 }
