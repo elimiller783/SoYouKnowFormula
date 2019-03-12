@@ -10,37 +10,37 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Collection View Controller-->
+        <!--Memory Game View Controller-->
         <scene sceneID="4jY-mo-aLB">
             <objects>
-                <collectionViewController id="kLJ-SJ-sas" sceneMemberID="viewController">
+                <collectionViewController id="kLJ-SJ-sas" customClass="MemoryGameViewController" customModule="SoYouKnowFormula" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="fPA-Dt-0v7">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="40" minimumInteritemSpacing="40" id="WLJ-Nl-c7h">
-                            <size key="itemSize" width="300" height="300"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="20" id="WLJ-Nl-c7h">
+                            <size key="itemSize" width="225" height="225"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="40" minY="0.0" maxX="40" maxY="0.0"/>
+                            <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="ouh-oh-ZNH" customClass="DriverCardCell" customModule="SoYouKnowFormula" customModuleProvider="target">
-                                <rect key="frame" x="40" y="0.0" width="300" height="300"/>
+                                <rect key="frame" x="20" y="0.0" width="225" height="225"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="225" height="225"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CarCardCellBack" translatesAutoresizingMaskIntoConstraints="NO" id="wI8-aF-4je">
-                                            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="225" height="225"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Ze-9N-0H4">
-                                            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="225" height="225"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ply-oo-ZhE">
-                                            <rect key="frame" x="20" y="210" width="260" height="46"/>
+                                            <rect key="frame" x="0.0" y="59" width="225" height="117"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                             <nil key="textColor"/>
@@ -91,6 +91,9 @@
                                 </constraints>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Start Game"/>
+                                <connections>
+                                    <segue destination="kLJ-SJ-sas" kind="show" id="JGw-I9-xSD"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FormulaAppLogo" translatesAutoresizingMaskIntoConstraints="NO" id="ri6-oN-jjv">
                                 <rect key="frame" x="680" y="161" width="550" height="150"/>
