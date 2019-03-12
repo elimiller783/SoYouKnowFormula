@@ -15,7 +15,14 @@ class MemoryGameViewController: UICollectionViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 28
+    }
 
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        return collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
+    }
 
     /*
     // MARK: - Navigation
