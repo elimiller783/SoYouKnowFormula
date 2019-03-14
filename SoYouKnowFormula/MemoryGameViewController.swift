@@ -36,7 +36,7 @@ class MemoryGameViewController: UICollectionViewController {
     
     @objc func onTimerTick(timer: Timer) -> Void {
         timerRunCount += 0.1
-        print("This is timer run count \(timerRunCount / 60)")
+        
     }
     
     override func viewDidLoad() {
@@ -172,14 +172,16 @@ class MemoryGameViewController: UICollectionViewController {
                 //Add to score
                 self.numberCorrect += 1
                 print("this is number correct so far\(self.numberCorrect)")
-                if self.numberCorrect == 14 {
+                if self.numberCorrect == 1 {
                     print("does enter")
                     self.timer?.invalidate()
-                    
-                    
+                    print("This is timer run count \(self.timerRunCount)")
                     //self.endGame()
                 }
                 
+                if self.timerRunCount >= 60 {
+                    self.secondsToHourMinuteSecondFormat(seconds: self.timerRunCount)
+                }
                 
             }
         } else {
@@ -192,7 +194,36 @@ class MemoryGameViewController: UICollectionViewController {
         view.isUserInteractionEnabled = true
         
     }
+    
+    func secondsToHourMinuteSecondFormat(seconds: Double) -> (Int, Int, Int) {
+        
+        print("lets see\(Int(seconds / 3600), Int((seconds.truncatingRemainder(dividingBy: 3600))) / 60, Int((seconds.truncatingRemainder(dividingBy: 3600))) % 60)")
+        
+        return (Int(seconds / 3600), Int((seconds.truncatingRemainder(dividingBy: 3600))) / 60, Int((seconds.truncatingRemainder(dividingBy: 3600))) % 60)
+        
+    }
  
+    func endGame() {
+        let imageView = UIImageView(image: UIImage(named: "checkeredflag"))
+        imageView.center = view.center
+        imageView.alpha = 0
+        imageView.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+        view.addSubview(imageView)
+        
+        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: [], animations: {
+            imageView.alpha = 1
+            imageView.transform = .identity
+        })
+        
+//        let button: UIButton = {
+//            let button = UIButton()
+//            button.translatesAutoresizingMaskIntoConstraints = false
+//            return button
+//        }()
+        
+        
+        
+    }
     
   
     
