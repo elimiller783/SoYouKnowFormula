@@ -24,7 +24,7 @@ class MemoryGameViewController: UICollectionViewController {
     var timerRunCount = 0.0
     let tickRate = 0.1
     
-    
+    //let vc = GameEndViewController()
     
     @objc func startTimer() {
         print("Timer is on")
@@ -176,7 +176,7 @@ class MemoryGameViewController: UICollectionViewController {
                     print("does enter")
                     self.timer?.invalidate()
                     print("This is timer run count \(self.timerRunCount)")
-                    //self.endGame()
+                    self.endGame()
                 }
                 
                 if self.timerRunCount >= 60 {
@@ -204,25 +204,26 @@ class MemoryGameViewController: UICollectionViewController {
     }
  
     func endGame() {
-        let imageView = UIImageView(image: UIImage(named: "checkeredflag"))
-        imageView.center = view.center
-        imageView.alpha = 0
-        imageView.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
-        view.addSubview(imageView)
-        
-        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: [], animations: {
-            imageView.alpha = 1
-            imageView.transform = .identity
-        })
+//        let imageView = UIImageView(image: UIImage(named: "checkeredFlag"))
+//        imageView.center = view.center
+//        imageView.alpha = 0
+//        imageView.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+//        view.addSubview(imageView)
+//
+//        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: [], animations: {
+//            imageView.alpha = 1
+//            imageView.transform = .identity
+//        })
         
 //        let button: UIButton = {
 //            let button = UIButton()
 //            button.translatesAutoresizingMaskIntoConstraints = false
 //            return button
 //        }()
-        
-        
-        
+        //present(vc, animated: true)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "GameEnd")
+        present(vc, animated: true)
     }
     
   

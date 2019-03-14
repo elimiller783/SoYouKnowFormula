@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27041719223AEBA5001A1E8C /* GameEndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27041718223AEBA5001A1E8C /* GameEndViewController.swift */; };
 		270AD33F2236862E00F9F79F /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270AD33E2236862D00F9F79F /* SwiftyJSON.swift */; };
 		270AD3412236C82400F9F79F /* names.json in Resources */ = {isa = PBXBuildFile; fileRef = 270AD3402236C82400F9F79F /* names.json */; };
 		270AD3432237EE7500F9F79F /* MemoryGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270AD3422237EE7500F9F79F /* MemoryGameViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27041718223AEBA5001A1E8C /* GameEndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEndViewController.swift; sourceTree = "<group>"; };
 		270AD33E2236862D00F9F79F /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		270AD3402236C82400F9F79F /* names.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = names.json; sourceTree = "<group>"; };
 		270AD3422237EE7500F9F79F /* MemoryGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				279DA16722346B2C00AE943D /* AppDelegate.swift */,
 				279DA16922346B2C00AE943D /* ViewController.swift */,
 				279DA16B22346B2C00AE943D /* Main.storyboard */,
+				27041718223AEBA5001A1E8C /* GameEndViewController.swift */,
 				270AD3422237EE7500F9F79F /* MemoryGameViewController.swift */,
 				279DA1762234DBDD00AE943D /* DriverCardCell.swift */,
 				279DA16E22346B2E00AE943D /* Assets.xcassets */,
@@ -146,6 +149,7 @@
 			files = (
 				279DA1772234DBDD00AE943D /* DriverCardCell.swift in Sources */,
 				279DA16A22346B2C00AE943D /* ViewController.swift in Sources */,
+				27041719223AEBA5001A1E8C /* GameEndViewController.swift in Sources */,
 				270AD33F2236862E00F9F79F /* SwiftyJSON.swift in Sources */,
 				279DA16822346B2C00AE943D /* AppDelegate.swift in Sources */,
 				270AD3432237EE7500F9F79F /* MemoryGameViewController.swift in Sources */,
