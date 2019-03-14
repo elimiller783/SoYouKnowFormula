@@ -12,7 +12,6 @@ class MemoryGameViewController: UICollectionViewController {
 
     var names: [JSON]!
     var cells = [Int: DriverCardCell]()
-    
     var language = "english"
     var nameType = ""
     
@@ -20,20 +19,25 @@ class MemoryGameViewController: UICollectionViewController {
     var secondCardSelected: DriverCardCell?
    
     var numberCorrect = 0
-    var timerRunCount = 0.0
-    var timer = Timer()
     
+    var timer: Timer?
+    var timerRunCount = 0.0
+    let tickRate = 0.1
     
     
     
     @objc func startTimer() {
         print("Timer is on")
-        timer.fire()
+        //timer.fire()
         //timerRunCount += 0.01
-        print("This is the timer clock \(timerRunCount)")
+        //print("This is the timer clock \(timerRunCount)")
         
     }
     
+    @objc func onTimerTick(timer: Timer) -> Void {
+        timerRunCount += 0.1
+        print("This is timer run count \(timerRunCount / 60)")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -83,8 +87,8 @@ class MemoryGameViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        timer.fire()
-        print("ok is the time valid\(timer.timeInterval)")
+        //timer.fire()
+        //print("ok is the time valid\(timer.timeInterval)")
         return 28
     }
 
@@ -97,8 +101,13 @@ class MemoryGameViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
      
+        if timer == nil {
+            timer = Timer.scheduledTimer(timeInterval: tickRate, target: self, selector: #selector(onTimerTick), userInfo: nil, repeats: true)
+        }
+        
         
         guard let cell = collectionView.cellForItem(at: indexPath) as? DriverCardCell else {return}
+        
         
         
         
@@ -163,10 +172,14 @@ class MemoryGameViewController: UICollectionViewController {
                 //Add to score
                 self.numberCorrect += 1
                 print("this is number correct so far\(self.numberCorrect)")
-                
-                if self.numberCorrect == 1 {
-                    self.endGame()
+                if self.numberCorrect == 14 {
+                    print("does enter")
+                    self.timer?.invalidate()
+                    
+                    
+                    //self.endGame()
                 }
+                
                 
             }
         } else {
@@ -179,24 +192,9 @@ class MemoryGameViewController: UICollectionViewController {
         view.isUserInteractionEnabled = true
         
     }
+ 
     
-    
-//    @objc func startTimer() {
-//        print("Timer is on")
-//        timerRunCount += Int(0.01)
-//        print("This is the timer clock \(timerRunCount)")
-//    }
-    
-//    func startTime() {
-//        timer.fire()
-//    }
-    
-    
-    func endGame() {
-        print("This is your final time \(timer.timeInterval)")
-        timer.invalidate()
-    }
-    
+  
     
     /*
     // MARK: - Navigation
