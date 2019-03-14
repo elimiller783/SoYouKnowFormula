@@ -22,18 +22,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="checkeredFlag" translatesAutoresizingMaskIntoConstraints="NO" id="wKQ-YN-rP4">
-                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YOU FINISHED THE RACE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTI-lT-Tr8">
-                                <rect key="frame" x="110" y="123" width="1700" height="253"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="YOU FINISHED THE RACE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTI-lT-Tr8">
+                                <rect key="frame" x="232" y="184" width="1457" height="192"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="116"/>
                                 <color key="textColor" red="0.71153124999999995" green="0.1058376338" blue="0.045420221900000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSw-GM-Bfi">
+                                <rect key="frame" x="423" y="790" width="1074" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1074" id="tKA-Ci-8zS"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Play Again?"/>
+                                <connections>
+                                    <segue destination="kLJ-SJ-sas" kind="show" id="Mtp-uB-fCz"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="checkeredFlag" translatesAutoresizingMaskIntoConstraints="NO" id="wKQ-YN-rP4">
+                                <rect key="frame" x="0.0" y="-30" width="1920" height="1080"/>
+                            </imageView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="CSw-GM-Bfi" firstAttribute="top" secondItem="fTI-lT-Tr8" secondAttribute="bottom" constant="414" id="205-Md-xS0"/>
+                            <constraint firstItem="wKQ-YN-rP4" firstAttribute="top" secondItem="6S3-RL-fIA" secondAttribute="top" id="5WF-aY-qRI"/>
+                            <constraint firstItem="l53-Pe-rtU" firstAttribute="top" secondItem="CSw-GM-Bfi" secondAttribute="bottom" constant="137" id="5ce-bw-D0c"/>
+                            <constraint firstItem="CSw-GM-Bfi" firstAttribute="top" secondItem="wKQ-YN-rP4" secondAttribute="bottom" constant="-290" id="5fK-7i-Iux"/>
+                            <constraint firstAttribute="bottom" secondItem="wKQ-YN-rP4" secondAttribute="bottom" id="c29-Oe-PIO"/>
+                            <constraint firstItem="wKQ-YN-rP4" firstAttribute="leading" secondItem="6S3-RL-fIA" secondAttribute="leading" id="cbu-Vb-OCH"/>
+                            <constraint firstItem="wKQ-YN-rP4" firstAttribute="centerX" secondItem="fTI-lT-Tr8" secondAttribute="centerX" id="gS3-zk-y25"/>
+                            <constraint firstItem="CSw-GM-Bfi" firstAttribute="leading" secondItem="wKQ-YN-rP4" secondAttribute="trailing" constant="-1497" id="jXr-6U-FZY"/>
+                            <constraint firstItem="CSw-GM-Bfi" firstAttribute="centerX" secondItem="fTI-lT-Tr8" secondAttribute="centerX" id="zCs-E8-NA6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="DSM-tK-8Fc"/>
                     </view>
                 </viewController>
@@ -156,4 +176,7 @@
         <image name="checkeredFlag" width="983" height="518.4000244140625"/>
         <image name="raceBackground" width="1080" height="731"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Mtp-uB-fCz"/>
+    </inferredMetricsTieBreakers>
 </document>

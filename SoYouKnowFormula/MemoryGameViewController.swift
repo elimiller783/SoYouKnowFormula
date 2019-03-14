@@ -224,6 +224,8 @@ class MemoryGameViewController: UICollectionViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "GameEnd")
         present(vc, animated: true)
+        
+        
     }
     
   
