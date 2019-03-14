@@ -33,6 +33,16 @@
                                 <color key="textColor" red="0.71153124999999995" green="0.1058376338" blue="0.045420221900000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOn-ye-1hJ">
+                                <rect key="frame" x="550" y="779" width="747" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="38"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Play Again?"/>
+                                <connections>
+                                    <segue destination="kLJ-SJ-sas" kind="show" id="V7U-CG-AC9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DSM-tK-8Fc"/>
                     </view>
@@ -156,4 +166,7 @@
         <image name="checkeredFlag" width="983" height="518.4000244140625"/>
         <image name="raceBackground" width="1080" height="731"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="JGw-I9-xSD"/>
+    </inferredMetricsTieBreakers>
 </document>
