@@ -8,12 +8,21 @@
 
 import UIKit
 
-class GameEndViewController: UIViewController {
 
+protocol TimerDelegate: class {
+    func printTime(timerRunCount: Double)
+}
+class GameEndViewController: UIViewController {
+    @IBOutlet var scoreboard: UILabel!
+    
+    weak var delegate: TimerDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("end call")
         // Do any additional setup after loading the view.
+    
+    //delegate?.printTime(timerRunCount: <#T##Double#>)
     }
 
 

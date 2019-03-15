@@ -8,8 +8,13 @@
 
 import UIKit
 
-class MemoryGameViewController: UICollectionViewController {
+class MemoryGameViewController: UICollectionViewController, TimerDelegate {
+    func printTime(timerRunCount: Double) {
+        print("Protocol called to print time: \(timerRunCount)")
+    }
+    
 
+    
     var names: [JSON]!
     var cells = [Int: DriverCardCell]()
     var language = "english"
@@ -25,6 +30,7 @@ class MemoryGameViewController: UICollectionViewController {
     let tickRate = 0.1
     
     //let vc = GameEndViewController()
+    let gameController = GameEndViewController()
     
     @objc func startTimer() {
         print("Timer is on")
@@ -176,6 +182,8 @@ class MemoryGameViewController: UICollectionViewController {
                     print("does enter")
                     self.timer?.invalidate()
                     print("This is timer run count \(self.timerRunCount)")
+                    self.gameController.delegate = self 
+                    self.printTime(timerRunCount: self.timerRunCount)
                     self.endGame()
                 }
                 

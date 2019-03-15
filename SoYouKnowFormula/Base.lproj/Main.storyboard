@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="erbos_draco_1st_open_nbp.ttf">
+            <string>Erbos-Draco-1st-Open-NBP</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Game End View Controller-->
         <scene sceneID="7Qh-VY-4Ju">
@@ -34,7 +39,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOn-ye-1hJ">
-                                <rect key="frame" x="550" y="779" width="747" height="85"/>
+                                <rect key="frame" x="587" y="879" width="747" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="38"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
@@ -43,9 +48,20 @@
                                     <segue destination="kLJ-SJ-sas" kind="show" id="V7U-CG-AC9"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWn-sH-vLj">
+                                <rect key="frame" x="659" y="549" width="603" height="129"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Erbos-Draco-1st-Open-NBP" family="Erbos Draco 1st Open NBP" pointSize="106"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DSM-tK-8Fc"/>
                     </view>
+                    <connections>
+                        <outlet property="scoreboard" destination="fWn-sH-vLj" id="cyp-Rd-q7C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3UE-NW-z1B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

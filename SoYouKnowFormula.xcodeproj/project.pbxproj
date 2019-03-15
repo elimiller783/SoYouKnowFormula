@@ -11,6 +11,9 @@
 		270AD33F2236862E00F9F79F /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270AD33E2236862D00F9F79F /* SwiftyJSON.swift */; };
 		270AD3412236C82400F9F79F /* names.json in Resources */ = {isa = PBXBuildFile; fileRef = 270AD3402236C82400F9F79F /* names.json */; };
 		270AD3432237EE7500F9F79F /* MemoryGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270AD3422237EE7500F9F79F /* MemoryGameViewController.swift */; };
+		271E660E223B107300C9EB02 /* readme_ed1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 271E660B223B107300C9EB02 /* readme_ed1.txt */; };
+		271E660F223B107300C9EB02 /* erbos_draco_1st_nbp.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 271E660C223B107300C9EB02 /* erbos_draco_1st_nbp.ttf */; };
+		271E6610223B107300C9EB02 /* erbos_draco_1st_open_nbp.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 271E660D223B107300C9EB02 /* erbos_draco_1st_open_nbp.ttf */; };
 		279DA16822346B2C00AE943D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279DA16722346B2C00AE943D /* AppDelegate.swift */; };
 		279DA16A22346B2C00AE943D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279DA16922346B2C00AE943D /* ViewController.swift */; };
 		279DA16D22346B2C00AE943D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279DA16B22346B2C00AE943D /* Main.storyboard */; };
@@ -23,6 +26,9 @@
 		270AD33E2236862D00F9F79F /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		270AD3402236C82400F9F79F /* names.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = names.json; sourceTree = "<group>"; };
 		270AD3422237EE7500F9F79F /* MemoryGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameViewController.swift; sourceTree = "<group>"; };
+		271E660B223B107300C9EB02 /* readme_ed1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme_ed1.txt; sourceTree = "<group>"; };
+		271E660C223B107300C9EB02 /* erbos_draco_1st_nbp.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = erbos_draco_1st_nbp.ttf; sourceTree = "<group>"; };
+		271E660D223B107300C9EB02 /* erbos_draco_1st_open_nbp.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = erbos_draco_1st_open_nbp.ttf; sourceTree = "<group>"; };
 		279DA16422346B2C00AE943D /* SoYouKnowFormula.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoYouKnowFormula.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		279DA16722346B2C00AE943D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		279DA16922346B2C00AE943D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +49,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		271E660A223B107300C9EB02 /* ErbosDracoMonospacedNBP */ = {
+			isa = PBXGroup;
+			children = (
+				271E660B223B107300C9EB02 /* readme_ed1.txt */,
+				271E660C223B107300C9EB02 /* erbos_draco_1st_nbp.ttf */,
+				271E660D223B107300C9EB02 /* erbos_draco_1st_open_nbp.ttf */,
+			);
+			path = ErbosDracoMonospacedNBP;
+			sourceTree = "<group>";
+		};
 		279DA15B22346B2C00AE943D = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +88,7 @@
 				279DA17022346B2E00AE943D /* Info.plist */,
 				270AD3402236C82400F9F79F /* names.json */,
 				270AD33E2236862D00F9F79F /* SwiftyJSON.swift */,
+				271E660A223B107300C9EB02 /* ErbosDracoMonospacedNBP */,
 			);
 			path = SoYouKnowFormula;
 			sourceTree = "<group>";
@@ -136,7 +153,10 @@
 			files = (
 				270AD3412236C82400F9F79F /* names.json in Resources */,
 				279DA16F22346B2E00AE943D /* Assets.xcassets in Resources */,
+				271E6610223B107300C9EB02 /* erbos_draco_1st_open_nbp.ttf in Resources */,
 				279DA16D22346B2C00AE943D /* Main.storyboard in Resources */,
+				271E660E223B107300C9EB02 /* readme_ed1.txt in Resources */,
+				271E660F223B107300C9EB02 /* erbos_draco_1st_nbp.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
