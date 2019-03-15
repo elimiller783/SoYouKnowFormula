@@ -8,8 +8,15 @@
 
 import UIKit
 
-class GameEndViewController: UIViewController {
+protocol GameEndViewControllerDelegate {
+    func displayTime(time: Double)
+}
 
+class GameEndViewController: UIViewController {
+    @IBOutlet var timeClock: UILabel!
+    
+    var delegate: GameEndViewControllerDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("end call")
@@ -27,4 +34,11 @@ class GameEndViewController: UIViewController {
     }
     */
 
+}
+extension MemoryGameViewController: GameEndViewControllerDelegate {
+    func displayTime(time: Double) {
+        timerRunCount = time
+    }
+    
+    
 }

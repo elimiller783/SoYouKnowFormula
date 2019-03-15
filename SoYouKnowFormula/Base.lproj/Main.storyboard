@@ -75,6 +75,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DSM-tK-8Fc"/>
                     </view>
+                    <connections>
+                        <outlet property="timeClock" destination="tL4-5Q-TGp" id="ph8-Vq-DE0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3UE-NW-z1B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
