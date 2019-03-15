@@ -88,23 +88,37 @@
                                     <rect key="frame" x="0.0" y="0.0" width="225" height="225"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CarCardCellBack" translatesAutoresizingMaskIntoConstraints="NO" id="wI8-aF-4je">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CarCardCellBack" translatesAutoresizingMaskIntoConstraints="NO" id="wI8-aF-4je">
                                             <rect key="frame" x="0.0" y="0.0" width="225" height="225"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Ze-9N-0H4">
+                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Ze-9N-0H4">
                                             <rect key="frame" x="0.0" y="0.0" width="225" height="225"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ply-oo-ZhE">
+                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ply-oo-ZhE">
                                             <rect key="frame" x="0.0" y="59" width="225" height="117"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
+                                            <variation key="userInterfaceStyle=dark">
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </variation>
                                         </label>
                                     </subviews>
                                 </view>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="wI8-aF-4je" secondAttribute="trailing" id="0HW-2c-tnK"/>
+                                    <constraint firstItem="3Ze-9N-0H4" firstAttribute="top" secondItem="ouh-oh-ZNH" secondAttribute="top" id="0mR-Rd-JMe"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ply-oo-ZhE" secondAttribute="trailing" id="Dm5-I5-FJ4"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ply-oo-ZhE" secondAttribute="bottom" constant="49" id="SLe-bd-jTl"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Ze-9N-0H4" secondAttribute="trailing" id="Wob-UL-u3V"/>
+                                    <constraint firstItem="wI8-aF-4je" firstAttribute="leading" secondItem="ouh-oh-ZNH" secondAttribute="leading" id="Yar-fh-wJJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="3Ze-9N-0H4" secondAttribute="bottom" id="ZoU-If-iKt"/>
+                                    <constraint firstItem="Ply-oo-ZhE" firstAttribute="leading" secondItem="ouh-oh-ZNH" secondAttribute="leading" id="dCG-QA-w5L"/>
+                                    <constraint firstItem="3Ze-9N-0H4" firstAttribute="leading" secondItem="ouh-oh-ZNH" secondAttribute="leading" id="i8c-hH-wzq"/>
+                                    <constraint firstItem="wI8-aF-4je" firstAttribute="top" secondItem="ouh-oh-ZNH" secondAttribute="top" id="rkO-qm-IBh"/>
+                                    <constraint firstAttribute="bottom" secondItem="wI8-aF-4je" secondAttribute="bottom" id="ydH-Zs-1V9"/>
+                                    <constraint firstItem="Ply-oo-ZhE" firstAttribute="top" secondItem="ouh-oh-ZNH" secondAttribute="top" constant="59" id="yy8-dL-AsC"/>
+                                </constraints>
                                 <connections>
                                     <outlet property="card" destination="wI8-aF-4je" id="0GY-Ej-W9E"/>
                                     <outlet property="content" destination="3Ze-9N-0H4" id="PW6-Ne-Vhg"/>
