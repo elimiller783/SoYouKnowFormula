@@ -43,13 +43,20 @@
                                     <segue destination="kLJ-SJ-sas" kind="show" id="V7U-CG-AC9"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JnB-1a-oCN">
+                                <rect key="frame" x="435" y="418" width="990" height="186"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DSM-tK-8Fc"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3UE-NW-z1B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-463" y="-4013"/>
+            <point key="canvasLocation" x="-480" y="-4469"/>
         </scene>
         <!--Memory Game View Controller-->
         <scene sceneID="4jY-mo-aLB">
@@ -167,6 +174,6 @@
         <image name="raceBackground" width="1080" height="731"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="JGw-I9-xSD"/>
+        <segue reference="V7U-CG-AC9"/>
     </inferredMetricsTieBreakers>
 </document>
