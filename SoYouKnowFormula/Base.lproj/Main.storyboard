@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="erbos_draco_1st_open_nbp.ttf">
+            <string>Erbos-Draco-1st-Open-NBP</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Game End View Controller-->
         <scene sceneID="7Qh-VY-4Ju">
@@ -22,20 +27,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="checkeredFlag" translatesAutoresizingMaskIntoConstraints="NO" id="wKQ-YN-rP4">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkeredFlag" translatesAutoresizingMaskIntoConstraints="NO" id="wKQ-YN-rP4">
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YOU FINISHED THE RACE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTI-lT-Tr8">
-                                <rect key="frame" x="110" y="123" width="1700" height="253"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOU FINISHED THE RACE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTI-lT-Tr8">
+                                <rect key="frame" x="232" y="60" width="1457" height="139"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="116"/>
                                 <color key="textColor" red="0.71153124999999995" green="0.1058376338" blue="0.045420221900000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOn-ye-1hJ">
-                                <rect key="frame" x="550" y="779" width="747" height="85"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOn-ye-1hJ">
+                                <rect key="frame" x="587" y="848" width="734" height="85"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="38"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Play Again?"/>
@@ -43,7 +45,34 @@
                                     <segue destination="kLJ-SJ-sas" kind="show" id="V7U-CG-AC9"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="123456789" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tL4-5Q-TGp">
+                                <rect key="frame" x="492" y="544" width="936" height="167"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="167" id="mdB-gq-t4E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Erbos-Draco-1st-Open-NBP" family="Erbos Draco 1st Open NBP" pointSize="65"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="DSM-tK-8Fc" firstAttribute="top" secondItem="wKQ-YN-rP4" secondAttribute="top" constant="60" id="05V-WW-UzU"/>
+                            <constraint firstItem="fTI-lT-Tr8" firstAttribute="top" secondItem="DSM-tK-8Fc" secondAttribute="top" id="11n-MO-GWQ"/>
+                            <constraint firstItem="tL4-5Q-TGp" firstAttribute="centerX" secondItem="fTI-lT-Tr8" secondAttribute="centerX" id="3nR-sM-f4n"/>
+                            <constraint firstItem="DSM-tK-8Fc" firstAttribute="top" secondItem="fTI-lT-Tr8" secondAttribute="bottom" constant="-139" id="7lq-pq-NLF"/>
+                            <constraint firstItem="EOn-ye-1hJ" firstAttribute="leading" secondItem="DSM-tK-8Fc" secondAttribute="leading" constant="497" id="825-14-HdR"/>
+                            <constraint firstItem="fTI-lT-Tr8" firstAttribute="leading" secondItem="DSM-tK-8Fc" secondAttribute="leading" constant="142" id="C0J-NH-ncw"/>
+                            <constraint firstItem="wKQ-YN-rP4" firstAttribute="trailing" secondItem="DSM-tK-8Fc" secondAttribute="trailing" constant="90" id="DbZ-7y-Rmg"/>
+                            <constraint firstItem="tL4-5Q-TGp" firstAttribute="leading" secondItem="DSM-tK-8Fc" secondAttribute="leading" constant="402" id="Hjq-Rw-xlR"/>
+                            <constraint firstItem="wKQ-YN-rP4" firstAttribute="bottom" secondItem="DSM-tK-8Fc" secondAttribute="bottom" constant="60" id="Pgs-wO-ZDd"/>
+                            <constraint firstItem="DSM-tK-8Fc" firstAttribute="bottom" secondItem="EOn-ye-1hJ" secondAttribute="bottom" constant="87" id="Twt-6x-g5N"/>
+                            <constraint firstItem="DSM-tK-8Fc" firstAttribute="trailing" secondItem="fTI-lT-Tr8" secondAttribute="trailing" constant="141" id="ac4-LZ-rOd"/>
+                            <constraint firstItem="DSM-tK-8Fc" firstAttribute="leading" secondItem="wKQ-YN-rP4" secondAttribute="leading" constant="90" id="eD0-W4-9cw"/>
+                            <constraint firstItem="fTI-lT-Tr8" firstAttribute="leading" secondItem="DSM-tK-8Fc" secondAttribute="trailing" constant="-1598" id="gPk-dL-HlI"/>
+                            <constraint firstItem="DSM-tK-8Fc" firstAttribute="trailing" secondItem="EOn-ye-1hJ" secondAttribute="trailing" constant="509" id="nfD-Ep-lEL"/>
+                            <constraint firstAttribute="bottom" secondItem="tL4-5Q-TGp" secondAttribute="bottom" constant="369" id="y2d-EX-fQ6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="DSM-tK-8Fc"/>
                     </view>
                 </viewController>
@@ -167,6 +196,6 @@
         <image name="raceBackground" width="1080" height="731"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="JGw-I9-xSD"/>
+        <segue reference="V7U-CG-AC9"/>
     </inferredMetricsTieBreakers>
 </document>
