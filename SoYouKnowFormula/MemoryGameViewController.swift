@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class MemoryGameViewController: UICollectionViewController {
 
     var names: [JSON]!
@@ -24,7 +25,6 @@ class MemoryGameViewController: UICollectionViewController {
     var timerRunCount = 0.0
     let tickRate = 0.1
     
-    //let vc = GameEndViewController()
     
     @objc func startTimer() {
         print("Timer is on")
@@ -96,6 +96,7 @@ class MemoryGameViewController: UICollectionViewController {
         //return collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
         //print("ok whats here\(String(describing: cells[indexPath.row]))")
         
+ 
         return cells[indexPath.row]!
     }
     
@@ -122,6 +123,7 @@ class MemoryGameViewController: UICollectionViewController {
             //Check answer
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.50) {
                 self.checkForMatch()
+                
             }
         } else {
             //Exit
@@ -147,18 +149,29 @@ class MemoryGameViewController: UICollectionViewController {
         })
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        var gameVC = segue.destination as! GameEndViewController
+//        gameVC.delegate = self
+        
+    }
+    
     func checkForMatch() {
         guard let firstCard = firstCardSelected,
             let secondCard = secondCardSelected else {return}
         
         if firstCard.name == secondCard.name {
             //Clear them so they cant be used again
+            
+            //firstCard.layer.borderColor = UIColor(red: 250/255, green: 250/255, blue: 210/255, alpha: 1.0) as! CGColor
+            
+            //secondCard.layer.borderColor = UIColor(red: 250, green: 250, blue: 210, alpha: 1) as! CGColor
+            
             firstCard.name = ""
             secondCard.name = ""
             
             //Want to add border color here
-//            firstCard.layer.borderColor = UIColor(red: 250, green: 250, blue: 210, alpha: 1) as! CGColor
-//            secondCard.layer.borderColor = UIColor(red: 250, green: 250, blue: 210, alpha: 1) as! CGColor
+
+
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                 UIView.transition(with: firstCard.card, duration: 0.5, options: .transitionCrossDissolve, animations: {
@@ -176,6 +189,7 @@ class MemoryGameViewController: UICollectionViewController {
                     print("does enter")
                     self.timer?.invalidate()
                     print("This is timer run count \(self.timerRunCount)")
+                    
                     self.endGame()
                 }
                 
@@ -221,8 +235,12 @@ class MemoryGameViewController: UICollectionViewController {
 //            return button
 //        }()
         //present(vc, animated: true)
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "GameEnd")
+        
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard?.instantiateViewController(withIdentifier: "GameEnd") as! GameEndViewController
+        vc.blankScore = String(self.timerRunCount)
+        print("Does this print \(String(self.timerRunCount))")
+        //print("we in here\(vc.timeBoard.text)")
         present(vc, animated: true)
     }
     
@@ -239,3 +257,4 @@ class MemoryGameViewController: UICollectionViewController {
     */
 
 }
+

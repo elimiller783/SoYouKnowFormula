@@ -8,15 +8,37 @@
 
 import UIKit
 
+//protocol GameEndViewControllerDelegate: class {
+//    func updateTimeDisplay(timerRunCount: Double)
+//}
 class GameEndViewController: UIViewController {
-
+    
+    
+    
+    
+    
+    
+    @IBOutlet var timeBoard: UILabel!
+    
+    var blankScore: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("end call")
         // Do any additional setup after loading the view.
+//        delegate?.updateTimeDisplay(timerRunCount: <#T##Double#>)
+    //timeBoard.text = delegate?.updateTimeDisplay(timerRunCount: )
+        timeBoard.text = blankScore
+        
+    }
+    
+    func displayTime(time: Double) {
+            print("lit \(time)")
+            timeBoard.text = String(time)
     }
 
 
+    
     /*
     // MARK: - Navigation
 
@@ -28,3 +50,11 @@ class GameEndViewController: UIViewController {
     */
 
 }
+
+
+//extension GameEndViewController: MemoryGameViewControllerDelegate {
+//    func displayTime(time: Double) {
+//        print("lit \(time)")
+//        timeBoard.text = String(time)
+//    }
+//}

@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="erbos_draco_1st_open_nbp.ttf">
+            <string>Erbos-Draco-1st-Open-NBP</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Game End View Controller-->
         <scene sceneID="7Qh-VY-4Ju">
@@ -43,9 +48,20 @@
                                     <segue destination="kLJ-SJ-sas" kind="show" id="V7U-CG-AC9"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bq-20-7rs">
+                                <rect key="frame" x="481" y="384" width="868" height="212"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Erbos-Draco-1st-Open-NBP" family="Erbos Draco 1st Open NBP" pointSize="104"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DSM-tK-8Fc"/>
                     </view>
+                    <connections>
+                        <outlet property="timeBoard" destination="6bq-20-7rs" id="fJc-Wb-XxZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3UE-NW-z1B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -54,7 +70,7 @@
         <!--Memory Game View Controller-->
         <scene sceneID="4jY-mo-aLB">
             <objects>
-                <collectionViewController id="kLJ-SJ-sas" customClass="MemoryGameViewController" customModule="SoYouKnowFormula" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="MemoryGameViewController" id="kLJ-SJ-sas" customClass="MemoryGameViewController" customModule="SoYouKnowFormula" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="fPA-Dt-0v7">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
