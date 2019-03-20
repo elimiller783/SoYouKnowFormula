@@ -27,28 +27,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="checkeredFlag" translatesAutoresizingMaskIntoConstraints="NO" id="wKQ-YN-rP4">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkeredFlag" translatesAutoresizingMaskIntoConstraints="NO" id="wKQ-YN-rP4">
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YOU FINISHED THE RACE!!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTI-lT-Tr8">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOU FINISHED THE RACE!!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTI-lT-Tr8">
                                 <rect key="frame" x="110" y="23" width="1700" height="253"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="116"/>
                                 <color key="textColor" red="0.71153124999999995" green="0.1058376338" blue="0.045420221900000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bq-20-7rs">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bq-20-7rs">
                                 <rect key="frame" x="325" y="434" width="1271" height="212"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="212" id="hWS-xl-AGq"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Erbos-Draco-1st-Open-NBP" family="Erbos Draco 1st Open NBP" pointSize="104"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOn-ye-1hJ">
-                                <rect key="frame" x="587" y="767" width="747" height="85"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOn-ye-1hJ">
+                                <rect key="frame" x="587" y="767" width="746" height="85"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="38"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Play Again?"/>
@@ -57,6 +56,23 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="EOn-ye-1hJ" firstAttribute="leading" secondItem="DSM-tK-8Fc" secondAttribute="leading" constant="497" id="16e-QG-hr3"/>
+                            <constraint firstItem="fTI-lT-Tr8" firstAttribute="leading" secondItem="DSM-tK-8Fc" secondAttribute="leading" constant="20" id="3jv-OO-km6"/>
+                            <constraint firstItem="DSM-tK-8Fc" firstAttribute="leading" secondItem="wKQ-YN-rP4" secondAttribute="leading" constant="90" id="3yw-0L-bxP"/>
+                            <constraint firstItem="6bq-20-7rs" firstAttribute="leading" secondItem="DSM-tK-8Fc" secondAttribute="leading" constant="235" id="8DJ-cg-3cJ"/>
+                            <constraint firstItem="EOn-ye-1hJ" firstAttribute="centerX" secondItem="fTI-lT-Tr8" secondAttribute="centerX" id="HTz-gm-DKL"/>
+                            <constraint firstItem="DSM-tK-8Fc" firstAttribute="top" secondItem="fTI-lT-Tr8" secondAttribute="top" constant="37" id="LWm-LU-p0Y"/>
+                            <constraint firstItem="DSM-tK-8Fc" firstAttribute="trailing" secondItem="fTI-lT-Tr8" secondAttribute="trailing" constant="20" id="MOw-JE-8sn"/>
+                            <constraint firstItem="wKQ-YN-rP4" firstAttribute="bottom" secondItem="DSM-tK-8Fc" secondAttribute="bottom" constant="60" id="WZk-b6-27s"/>
+                            <constraint firstItem="6bq-20-7rs" firstAttribute="centerY" secondItem="wKQ-YN-rP4" secondAttribute="centerY" id="b61-Cu-oZz"/>
+                            <constraint firstItem="DSM-tK-8Fc" firstAttribute="bottom" secondItem="EOn-ye-1hJ" secondAttribute="bottom" constant="168" id="he1-sA-Vf8"/>
+                            <constraint firstItem="DSM-tK-8Fc" firstAttribute="top" secondItem="wKQ-YN-rP4" secondAttribute="top" constant="60" id="jF1-iQ-KW2"/>
+                            <constraint firstItem="DSM-tK-8Fc" firstAttribute="bottom" secondItem="fTI-lT-Tr8" secondAttribute="bottom" constant="744" id="nwK-xQ-r1m"/>
+                            <constraint firstItem="EOn-ye-1hJ" firstAttribute="top" secondItem="DSM-tK-8Fc" secondAttribute="top" constant="707" id="sga-hk-WMk"/>
+                            <constraint firstItem="wKQ-YN-rP4" firstAttribute="trailing" secondItem="DSM-tK-8Fc" secondAttribute="trailing" constant="90" id="yBc-IW-0NE"/>
+                            <constraint firstItem="EOn-ye-1hJ" firstAttribute="centerX" secondItem="6bq-20-7rs" secondAttribute="centerX" id="ykR-Wt-Mrp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="DSM-tK-8Fc"/>
                     </view>
                     <connections>
