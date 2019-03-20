@@ -31,15 +31,23 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YOU FINISHED THE RACE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTI-lT-Tr8">
-                                <rect key="frame" x="110" y="123" width="1700" height="253"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YOU FINISHED THE RACE!!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTI-lT-Tr8">
+                                <rect key="frame" x="110" y="23" width="1700" height="253"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="116"/>
                                 <color key="textColor" red="0.71153124999999995" green="0.1058376338" blue="0.045420221900000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bq-20-7rs">
+                                <rect key="frame" x="325" y="434" width="1271" height="212"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Erbos-Draco-1st-Open-NBP" family="Erbos Draco 1st Open NBP" pointSize="104"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOn-ye-1hJ">
-                                <rect key="frame" x="550" y="779" width="747" height="85"/>
+                                <rect key="frame" x="587" y="767" width="747" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="38"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
@@ -48,14 +56,6 @@
                                     <segue destination="kLJ-SJ-sas" kind="show" id="V7U-CG-AC9"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bq-20-7rs">
-                                <rect key="frame" x="481" y="384" width="868" height="212"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="Erbos-Draco-1st-Open-NBP" family="Erbos Draco 1st Open NBP" pointSize="104"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DSM-tK-8Fc"/>
                     </view>
@@ -183,6 +183,6 @@
         <image name="raceBackground" width="1080" height="731"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="JGw-I9-xSD"/>
+        <segue reference="V7U-CG-AC9"/>
     </inferredMetricsTieBreakers>
 </document>
