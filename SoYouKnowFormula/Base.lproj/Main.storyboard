@@ -36,6 +36,15 @@
                                 <color key="textColor" red="0.71153124999999995" green="0.1058376338" blue="0.045420221900000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOn-ye-1hJ">
+                                <rect key="frame" x="587" y="767" width="746" height="85"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="38"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Play Again?"/>
+                                <connections>
+                                    <segue destination="kLJ-SJ-sas" kind="show" id="V7U-CG-AC9"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bq-20-7rs">
                                 <rect key="frame" x="325" y="434" width="1271" height="212"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -46,24 +55,24 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOn-ye-1hJ">
-                                <rect key="frame" x="587" y="767" width="746" height="85"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="38"/>
-                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="Play Again?"/>
-                                <connections>
-                                    <segue destination="kLJ-SJ-sas" kind="show" id="V7U-CG-AC9"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Time " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oq-CA-MM4">
+                                <rect key="frame" x="110" y="308" width="1700" height="66"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="55"/>
+                                <color key="textColor" red="0.71153124999999995" green="0.1058376338" blue="0.045420221900000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <constraints>
                             <constraint firstItem="EOn-ye-1hJ" firstAttribute="leading" secondItem="DSM-tK-8Fc" secondAttribute="leading" constant="497" id="16e-QG-hr3"/>
                             <constraint firstItem="fTI-lT-Tr8" firstAttribute="leading" secondItem="DSM-tK-8Fc" secondAttribute="leading" constant="20" id="3jv-OO-km6"/>
                             <constraint firstItem="DSM-tK-8Fc" firstAttribute="leading" secondItem="wKQ-YN-rP4" secondAttribute="leading" constant="90" id="3yw-0L-bxP"/>
                             <constraint firstItem="6bq-20-7rs" firstAttribute="leading" secondItem="DSM-tK-8Fc" secondAttribute="leading" constant="235" id="8DJ-cg-3cJ"/>
+                            <constraint firstItem="1oq-CA-MM4" firstAttribute="top" secondItem="fTI-lT-Tr8" secondAttribute="bottom" constant="32" id="CPm-JT-lgz"/>
                             <constraint firstItem="EOn-ye-1hJ" firstAttribute="centerX" secondItem="fTI-lT-Tr8" secondAttribute="centerX" id="HTz-gm-DKL"/>
                             <constraint firstItem="DSM-tK-8Fc" firstAttribute="top" secondItem="fTI-lT-Tr8" secondAttribute="top" constant="37" id="LWm-LU-p0Y"/>
                             <constraint firstItem="DSM-tK-8Fc" firstAttribute="trailing" secondItem="fTI-lT-Tr8" secondAttribute="trailing" constant="20" id="MOw-JE-8sn"/>
+                            <constraint firstItem="1oq-CA-MM4" firstAttribute="leading" secondItem="fTI-lT-Tr8" secondAttribute="leading" id="PrE-eS-qPn"/>
+                            <constraint firstItem="1oq-CA-MM4" firstAttribute="trailing" secondItem="fTI-lT-Tr8" secondAttribute="trailing" id="Qfc-ZL-55U"/>
                             <constraint firstItem="wKQ-YN-rP4" firstAttribute="bottom" secondItem="DSM-tK-8Fc" secondAttribute="bottom" constant="60" id="WZk-b6-27s"/>
                             <constraint firstItem="6bq-20-7rs" firstAttribute="centerY" secondItem="wKQ-YN-rP4" secondAttribute="centerY" id="b61-Cu-oZz"/>
                             <constraint firstItem="DSM-tK-8Fc" firstAttribute="bottom" secondItem="EOn-ye-1hJ" secondAttribute="bottom" constant="168" id="he1-sA-Vf8"/>
@@ -81,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3UE-NW-z1B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-463" y="-4013"/>
+            <point key="canvasLocation" x="-151" y="-4180"/>
         </scene>
         <!--Memory Game View Controller-->
         <scene sceneID="4jY-mo-aLB">
@@ -112,12 +121,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="225" height="225"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ply-oo-ZhE">
+                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="Ply-oo-ZhE">
                                             <rect key="frame" x="0.0" y="59" width="225" height="117"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
+                                            <variation key="userInterfaceStyle=dark">
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                            </variation>
                                         </label>
                                     </subviews>
                                 </view>
@@ -136,7 +148,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OuE-zx-69V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-294" y="-1858"/>
+            <point key="canvasLocation" x="-63" y="-1926"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
