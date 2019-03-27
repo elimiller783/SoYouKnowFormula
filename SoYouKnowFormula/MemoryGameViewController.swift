@@ -185,7 +185,7 @@ class MemoryGameViewController: UICollectionViewController {
                 //Add to score
                 self.numberCorrect += 1
                 print("this is number correct so far\(self.numberCorrect)")
-                if self.numberCorrect == 1 {
+                if self.numberCorrect == 14 {
                     print("does enter")
                     self.timer?.invalidate()
                     print("This is timer run count \(self.timerRunCount)")
